@@ -234,7 +234,8 @@ h1 {
 	flex: 2;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    position: relative;
 }
 
 .upper,
@@ -250,6 +251,11 @@ h1 {
 	position: absolute;
 	top: 0px;
 	left: -13px;
+}
+
+.enjoy__play-icon {
+    position: absolute;
+    cursor: pointer;
 }
 
 /* End----------------------- */
