@@ -268,3 +268,41 @@ p.imggrid {
     margin: 0;
   }
 }
+
+/* ----------------------------------------------- */
+/* --------------- QUERIES ----------------------- */
+/* ----------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  h4 {
+    font-size: 13px;
+  }
+
+  h3.right-title {
+    font-size: 20px;
+  }
+
+  .large-image {
+    width: 25em;
+  }
+
+  p.imggrid,
+  p.right-title-content,
+  p.list-text {
+    font-size: 13px;
+    width: 18em;
+  }
+
+  p.right-title-content {
+    width: 19em;
+  }
+
+  p.page-sub-header {
+    font-size: 13px;
+  }
+
+  .container {
+    margin: auto;
+    justify-content: center;
+  }
+}
