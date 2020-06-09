@@ -258,3 +258,128 @@ main {
         justify-content: center;
     }
 }
+@media (min-width: 730px) {
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+    /*.image-col {
+        margin: 8px auto;
+    }
+    
+    .image-col img {
+        margin: 2px;
+    }
+    
+    .small-image {
+        height: 70px;
+    }
+    
+    .large-image {
+        height: 151px;
+    }
+    .side-by-side-container {
+        display: flex;
+    }
+    
+    .large-image-container {
+        margin-right: 7px;
+    }
+    
+    .stacked-image-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1px;
+    }
+    .rooms {
+        width: 350px;
+    }
+    .rooms-img {
+        width: 100%;
+    }*/
+
+}
+@media (min-width: 425px) {
+    .container {
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+    .image-col {
+        margin: 8px auto;
+    }
+    
+    .image-col img {
+        margin: 2px;
+    }
+    
+    .small-image {
+        height: 70px;
+    }
+    
+    .large-image {
+        height: 151px;
+    }
+    .side-by-side-container {
+        display: flex;
+    }
+    
+    .large-image-container {
+        margin-right: 7px;
+    }
+    
+    .stacked-image-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1px;
+    }
+    .rooms {
+        width: 350px;
+    }
+    .rooms-img {
+        width: 100%;
+    }
+
+}
+@media (min-width: 375px) {
+    .container {
+        max-width: 355px;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+    .image-col {
+        margin: 8px auto;
+    }
+    
+    .image-col img {
+        margin: 2px;
+    }
+    
+    .small-image {
+        height: 70px;
+    }
+    
+    .large-image {
+        height: 151px;
+    }
+    .side-by-side-container {
+        display: flex;
+    }
+    
+    .large-image-container {
+        margin-right: 7px;
+    }
+    
+    .stacked-image-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1px;
+    }
+    .rooms {
+        width: 350px;
+    }
+    .rooms-img {
+        width: 100%;
+    }
+}
