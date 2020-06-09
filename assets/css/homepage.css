@@ -101,11 +101,12 @@ h1{
 	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/Homepage-jumbotron.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size:cover ;
+	background-size:cover;
 	opacity: .9;
     min-height: calc(100vh - 30px);
 	display: flex;
-	color: white;
+    color: white;
+    border: 1px solid white;
 }
 
 .jumbotron-left{
@@ -114,27 +115,52 @@ h1{
     flex-direction: column;
     justify-content: center;
 	align-items: flex-start;
-	padding-left: 10%;
-}
-.jumbotron-left p{
-	margin-bottom: 2em;
-}
-.jumbotron-right{
-    flex: 2;
+    padding-left: 10%;
+    /* border: 1px solid white; */
 }
 
-.jumbotron-form{
+.jumbotron-right{
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid white; */
+
+}
+
+ .jumbotron-form{
+     color: black;
     display: flex;
     flex-direction: column;
-    background: #fff;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 70%;
+    min-height: 60%;
     border-radius: 5px;
-    position: absolute;
-    width: 370px;
-    height: 520px;
-    left: 847px;
-    top: 165px;
-    padding: 50px 50px;
 }
+.jumbotron-form p{
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 18px;
+}
+.jumbotron-form input{
+    outline: none;
+    width: 80%;
+    height: 2.5em;
+    padding: .5em;
+}
+
+.jumbotron-form button{
+    background: #D8B74B;
+    outline: none;
+    width: 80%;
+    padding: .5em;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+/*
 
 .jumbotron-form h3{
     color: #000;
@@ -170,7 +196,7 @@ h1{
     padding: 10px 70px;
     width: 260px;
     text-transform: uppercase;
-}
+} */
 
 /* Beggining of enjoy your stay section */
 .enjoy-container{
@@ -358,11 +384,15 @@ h1{
 
 /* @media queries */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) ,
+@media only screen and (max-width: 600px) 
 {
+    .image-col {
+        margin: auto;
+    }
     .jumbotron-container{
         width: 100%;
         flex-direction: column;
+        align-items: center;
     }
 
     .enjoy-services{
@@ -390,6 +420,8 @@ h1{
     }
     .btn-large{
         margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: auto;
     }
     .jumbotron-left h1 {
             font-size: 50px;
@@ -398,13 +430,45 @@ h1{
     .horizontal{
         margin: 1em auto 2em auto;
     }
+    .jumbotron-form{
+        width: 100%;
+        margin: 1em auto;
+        padding: 1em .5em;
+    }
+    .jumbotron-form h3{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .jumbotron-form p{
+        font-size: 17px;
+    }
+    .jumbotron-left p{
+        font-size: 18px;
+        width: 70%;
+        margin-bottom: 2em;
+    }
+    .jumbotron-left, .jumbotron-right{
+        flex: 1;
+    }
+    .jumbotron-form button{
+        margin-bottom: 1em;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width:700px) {
     .jumbotron-container{
         width: 100%;
         flex-direction: column;
+        align-items: center;
+    }
+    .btn-large{
+        margin: .5em auto 1em 1em;
+    }
+    .jumbotron-form {
+        width: 100%;
+        margin: 1em auto;
+        padding: 1em .5em;
     }
     .enjoy-header, 
     .enjoy-container,     
@@ -438,7 +502,30 @@ h1{
         margin: 1em auto 2em auto;
     }
 }
+@media only screen and (min-width: 700px) {
+    .jumbotron-form{
+        margin: 1em 0;
+    }
+    .jumbotron-form h3{
+        padding-top: 1em;
+        font-size: 25px;
+        text-align: center;
+    }
+    .jumbotron-form p{
+        font-size: 18px;
+    }
+
+
+    .rates{
+        margin-bottom: 1em;
+    }
+}
 @media only screen and (min-width: 954px) {
+    .jumbotron-container{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
     .enjoy-services{
         flex-direction: row;
     }
