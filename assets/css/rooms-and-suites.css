@@ -258,7 +258,7 @@ main {
         justify-content: center;
     }
 }
-@media (min-width: 730px) {
+@media (max-width: 730px) {
     .container {
         max-width: 600px;
         margin: 0 auto;
@@ -300,7 +300,7 @@ main {
     }*/
 
 }
-@media (min-width: 425px) {
+@media (max-width: 425px) {
     .container {
         max-width: 380px;
         margin: 0 auto;
@@ -342,7 +342,7 @@ main {
     }
 
 }
-@media (min-width: 375px) {
+@media (max-width: 375px) {
     .container {
         max-width: 355px;
         margin: 0 auto;
