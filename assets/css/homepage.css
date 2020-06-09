@@ -120,6 +120,50 @@ h1{
 .jumbotron-form{
     display: flex;
     flex-direction: column;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    width: 370px;
+    height: 520px;
+    left: 847px;
+    top: 165px;
+    padding: 50px 50px;
+}
+
+.jumbotron-form h3{
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+}
+
+.jumbotron-form p{
+    color: #585858;
+    text-align: center;
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 35px;
+}
+
+.jumbotron-form input {
+    background: #fff;
+    color: #202020;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 260px;
+    font-size: 16px;
+}
+
+.jumbotron-form .rates {
+    background: #d4af37;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 70px;
+    width: 260px;
+    text-transform: uppercase;
 }
 
 /* Beggining of enjoy your stay section */
