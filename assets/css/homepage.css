@@ -61,8 +61,8 @@ h1{
 
 .page-header {
     font-weight: 500;
-    font-size: 180%;
     text-align: center;
+    padding: 0 150px 0 0;
 }
 
 .page-header:after {
