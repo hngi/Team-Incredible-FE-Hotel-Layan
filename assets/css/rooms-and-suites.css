@@ -1,56 +1,166 @@
+/* ----------------------------------------------- */
+/* ---------------- INITIAL SETUP ---------------- */
+/* ----------------------------------------------- */
+
+* {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main {
+    color: #241E09;
+}
+
+/* ----------------------------------------------- */
+/* -------------------- LAYOUT ------------------- */
+/* ----------------------------------------------- */
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
 }
 
-body {
-    font-family: Source Sans Pro;
-}
-hr {
-    border: 1.5px solid #D4AF37;
-    width: 15vw;
-}
-/* Fonts */
-.star-hotel {
-    text-align: center;
-}
-.star-text {
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 45px;
-    letter-spacing: 0.01em;
-    color: #241E09;
-}
-.star-p {
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #241E09;
-}
-
-/* containers */
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
-.col-left {
-    flex: 1;
-}
-.col-right {
-    flex: 1;
-}
+
 .col {
-    flex: 1;
+    padding: 5px;
+    flex-wrap: nowrap;
+    /* width: 47%; */
 }
-.center {
+
+.image-col {
+    margin-right: 7%;
+}
+
+.image-col img {
+    margin: 5px;
+}
+
+.small-image {
+    height: 105px;
+}
+
+.large-image {
+    height: 227px;
+}
+
+.side-by-side-container {
+    display: flex;
+}
+
+.large-image-container {
+    margin-right: 7px;
+}
+
+.stacked-image-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+}
+
+/* ----------------------------------------------- */
+/* ---------------- HEADER SECTION --------------- */
+/* ----------------------------------------------- */
+.page-header-container {
+    margin-bottom: 70px;
+}
+
+.page-header {
+    font-weight: 500;
+    font-size: 180%;
     text-align: center;
 }
-.rooms {
-    margin-bottom: 16px;
+
+.page-header:after {
+    display: block;
+    height: 1px;
+    background-color: #D4AF37;
+    content: "";
+    width: 90px;
+    margin: 5px auto 10px;
+}
+
+.page-sub-header {
+    font-size: 75%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-weight: 300;
+    color: #3b331a;
+}
+
+/* ----------------------------------------------- */
+/* ----------- SPECIAL OFFERS SECTION ------------ */
+/* ----------------------------------------------- */
+.special-offers {
+    padding: 0 0 80px;
+}
+
+.offers-title {
+    font-size: 165%;
+    margin: 25px 0 15px;
+}
+
+.offers-sub-title {
+    font-size: 70%;
+    color: #3b331a;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.offers-list {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.offers-list li {
+    margin: 12px 0;
+}
+
+.list-icon {
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.list-text {
+    display: inline-block;
+    font-size: 69%;
+}
+
+
+.btn {
+    border-radius: 5px;
+    border: 1px solid #D4AF37;
+    text-transform: uppercase;
+    font-size: 50%;
+    padding: 11px 20px;
+    font-weight: 400;
+}
+
+.btn-fill {
+    background-color: #D4AF37;
+    color: #fff;
+}
+
+.btn-ghost {
+    color: #D4AF37;
+    background-color: #fff;
+}
+
+.btn-large {
+    font-size: 67%;
+    padding: 12px 20px;
+}
+
+/* ----------------------------------------------- */
+/* --------------- QUERIES SECTION --------------- */
+/* ----------------------------------------------- */
+
+@media only screen and (max-width: 1029px) {
+    .center-md {
+        justify-content: center;
+    }
 }
