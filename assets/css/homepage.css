@@ -8,10 +8,88 @@
     background-color: #D4AF37;
     border: none;
 }
-
+p{
+    font-size: 18px;
+}
 h1{
     font-size: 50px;
 }
+.row {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.col {
+    padding: 5px;
+    flex-wrap: nowrap;
+    /* width: 47%; */
+}
+
+.image-col {
+    margin-right: 7%;
+}
+
+.image-col img {
+    margin: 5px;
+}
+
+.small-image {
+    height: 105px;
+}
+
+.large-image {
+    height: 227px;
+}
+
+.side-by-side-container {
+    display: flex;
+}
+
+.large-image-container {
+    margin-right: 7px;
+}
+
+.stacked-image-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+}
+/* Header section--------------------- */
+.page-header-container {
+    margin-bottom: 70px;
+}
+
+.page-header {
+    font-weight: 500;
+    font-size: 180%;
+    text-align: center;
+}
+
+.page-header:after {
+    display: block;
+    height: 1px;
+    background-color: #D4AF37;
+    content: "";
+    width: 90px;
+    margin: 5px auto 10px;
+}
+
+.page-sub-header {
+    font-size: 75%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-weight: 300;
+    color: #3b331a;
+}
+
+
+
+
+
+
+/* Header End-------------------------------- */
+
+/* Jumbotron class */
 .jumbotron-container{
 	width: 100%;
 	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/Homepage-jumbotron.png');
@@ -74,10 +152,12 @@ h1{
 .first-col{
     /* border: 1px solid black; */
     flex: 1;
+    margin-right: 2em;
 }
 .sec-col{
     /* border: 1px solid black; */
     flex: 1;
+    margin-right: 2em;
 
 }
 .third-col{
@@ -90,61 +170,86 @@ h1{
 
 .upper, .lower{
     padding-left: 2em;
-	margin-bottom: 2em;
-    /* border: 1px solid black; */
+    margin-bottom: 2em;
 	
 }
 
 /* End----------------------- */
 
 /* Beginning of simplicity is our watch word section styling */
-.simplicity-container{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-	margin: 2em auto;
-	margin-bottom: 3em;
-}
-.header-span{
-	/* border: 1px solid black; */
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+.special-offers {
+    padding: 0 0 80px;
 }
 
-.book-room{
-	display: flex;
-	line-height: 1.5em;
+.offers-title {
+    font-size: 165%;
+    margin: 25px 0 15px;
 }
 
-.book-room > .left,.book-room > .right{
-	flex:1;
+.offers-sub-title {
+    font-size: 18px;
+    color: #3b331a;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
-.book-room > .left{
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	grid-gap: 1em;
+
+.offers-list {
+    list-style: none;
+    margin-bottom: 30px;
 }
-.top-left{
-	display: flex;
-	justify-content: space-between;
+
+.offers-list li {
+    margin: 12px 0;
 }
-.room-types{
-	/* border: 1px solid black; */
-	margin: 1em 0;
+
+.list-icon {
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
-.room-types > li{
-	margin: 10px 0;
-	list-style: none
+
+.list-text {
+    display: inline-block;
 }
-.button{
-    padding: .5em 1em;
-	border-radius: 4px;
-	outline: none;
-	background: #D4AF37;
-	color: white;
-	border: none;
-	cursor: pointer;
+
+
+.btn {
+    border-radius: 3px;
+    border: 1px solid #D4AF37;
+    text-transform: uppercase;
+    font-size: 55%;
+    padding: 10px 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin-right: 10px;
+}
+
+.btn-fill {
+    background-color: #D4AF37;
+    color: #fff;
+}
+
+.btn-fill:hover,
+.btn-fill:active {
+    background-color: #c9a633;
+    border: 1px solid #c9a633;
+}
+
+.btn-ghost {
+    color: #D4AF37;
+    background-color: #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #D4AF37;
+    color: #fff;
+}
+
+.btn-large {
+    font-size: 65%;
+    padding: 9px 22px;
 }
 
 /* End----------------------------*/
@@ -194,7 +299,7 @@ h1{
 	margin-bottom: 1em;
 }
 .card-desc{
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: 300;
 }
 
