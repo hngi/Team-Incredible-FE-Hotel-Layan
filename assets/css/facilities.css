@@ -46,18 +46,7 @@ h4 {
 	flex-wrap: nowrap;
 }
 
-.image-col {
-	margin-right: 5%;
-}
 
-.large-image {
-	width: 22.1em;
-	height: 23em;
-}
-
-.large-image-container {
-	margin-right: 7px;
-}
 
 .center-lg {
 	justify-content: center;
@@ -254,13 +243,11 @@ img {
 /* ----------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
+
 	h3.right-title {
 		font-size: 20px;
 	}
 
-	.large-image {
-		width: 25em;
-	}
 
 	p.imggrid,
 	p.right-title-content,
@@ -279,11 +266,19 @@ img {
 	}
 }
 
+@media (min-width: 700px) {
+	
+  .image-col {
+    margin-right: 5%;
+  }
+}
+
 @media (min-width: 1200px) {
 	* {
 		font-size: 20px;
 	}
 }
+
 
 @media (min-width: 1050px) {
 	.gallery {
