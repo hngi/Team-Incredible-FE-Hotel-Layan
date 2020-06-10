@@ -7,6 +7,10 @@
     font-weight: 400;
 }
 
+body {
+    font-size: 18px;
+}
+
 main {
     color: #241E09;
 }
@@ -28,7 +32,6 @@ main {
 .col {
     padding: 5px;
     flex-wrap: nowrap;
-    /* width: 47%; */
 }
 
 .image-col {
@@ -82,22 +85,18 @@ main {
 }
 
 .page-header {
-    font-weight: 500;
-    font-size: 180%;
+    font-weight: bold;
+    font-size: 30px;
     text-align: center;
 }
 
-.page-header:after {
-    display: block;
-    height: 1px;
-    background-color: #D4AF37;
-    content: "";
-    width: 90px;
-    margin: 5px auto 10px;
+hr {
+	border-top: 1.5px solid #d4af37;
+	width: 104px;
+	margin: 0.5rem auto 1rem;
 }
 
 .page-sub-header {
-    font-size: 75%;
     text-align: center;
     letter-spacing: 0.01em;
     font-weight: 300;
@@ -264,42 +263,8 @@ main {
         margin: 0 auto;
         padding: 1.5rem;
     }
-    /*.image-col {
-        margin: 8px auto;
-    }
-    
-    .image-col img {
-        margin: 2px;
-    }
-    
-    .small-image {
-        height: 70px;
-    }
-    
-    .large-image {
-        height: 151px;
-    }
-    .side-by-side-container {
-        display: flex;
-    }
-    
-    .large-image-container {
-        margin-right: 7px;
-    }
-    
-    .stacked-image-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1px;
-    }
-    .rooms {
-        width: 350px;
-    }
-    .rooms-img {
-        width: 100%;
-    }*/
-
 }
+
 @media (max-width: 425px) {
     .container {
         max-width: 380px;
