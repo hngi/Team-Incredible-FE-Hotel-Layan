@@ -450,6 +450,7 @@ h2 {
 	.page-header {
 		text-align: center;
 		padding: 1rem;
+		font-size: 30px;
 	}
 	.cards-container {
 		flex-direction: column;
@@ -509,7 +510,11 @@ h2 {
 	}
 
 	.enjoy-services {
-		margin-bottom: 3.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.special-offers {
+		padding: 0 0 35px;
 	}
 
 	.enjoy__play-icon {
@@ -531,7 +536,8 @@ h2 {
 	}
 
 	.enjoy-heading {
-		font-size: 35px;
+		margin-top: 20px;
+		font-size: 30px;
 	}
 
 	.enjoy-heading br {
@@ -590,7 +596,7 @@ h2 {
 	}
 	.review-title {
 		text-align: center;
-		font-size: 35px;
+		font-size: 30px;
 	}
 
 	.card {
