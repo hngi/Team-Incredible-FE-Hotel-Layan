@@ -21,7 +21,7 @@ body {
 }
 
 .header-nav-list {
-	padding: 0 24px;
+	padding: 0 20px;
 	list-style-type: none;
 }
 
@@ -142,5 +142,9 @@ header ul.show li {
 @media (min-width: 1200px) {
 	* {
 		font-size: 20px;
+	}
+
+	.header-nav-list {
+		padding: 0 32px;
 	}
 }
