@@ -458,6 +458,10 @@ h2 {
 	.card {
 		margin-bottom: 1em;
 	}
+
+	.card-desc {
+		text-align: center;
+	}
 	.page-header:after {
 		margin: 0.5em auto 0 auto;
 		height: 2px;
@@ -472,6 +476,7 @@ h2 {
 		font-weight: 700;
 		font-size: 77%;
 		padding: 15px 27px;
+		text-align: center;
 	}
 
 	.horizontal {
