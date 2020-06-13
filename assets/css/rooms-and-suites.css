@@ -13,6 +13,11 @@ body {
 
 main {
     color: #241E09;
+    margin-top: 4rem;
+}
+header{
+    margin-top: .6rem;
+
 }
 
 /* ----------------------------------------------- */
@@ -71,6 +76,7 @@ main {
 
 .col-2 {
     margin: 0 20px 40px 0;
+    min-height: 520px;
 }
 
 .center-lg {
@@ -85,9 +91,11 @@ main {
 }
 
 .page-header {
-    font-weight: bold;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 36px;
     text-align: center;
+    line-height: 45px;
+    
 }
 
 hr {
@@ -111,14 +119,17 @@ hr {
 }
 
 .offers-title {
-    font-size: 165%;
+    font-size: 36px;
     margin: 25px 0 15px;
+    font-weight: 600;
+    line-height: 45px;
+
 }
 
 .offers-sub-title {
-    font-size: 74%;
+    font-size: 18px;
     color: #3b331a;
-    font-weight: 300;
+    font-weight: normal;
     margin-bottom: 20px;
 }
 
@@ -129,17 +140,18 @@ hr {
 
 .offers-list li {
     margin: 12px 0;
+   
 }
 
 .list-icon {
-    height: 17px;
     vertical-align: middle;
     margin-right: 5px;
 }
 
 .list-text {
     display: inline-block;
-    font-size: 69%;
+    line-height: 132.3%;
+    font-size: 18px;
 }
 
 
@@ -147,12 +159,15 @@ hr {
     border-radius: 3px;
     border: 1px solid #D4AF37;
     text-transform: uppercase;
-    font-size: 55%;
     padding: 10px 18px;
-    font-weight: 400;
     text-decoration: none;
     transition: all 0.3s;
     margin-right: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 132.3%;
+   
 }
 
 .btn-fill {
@@ -178,8 +193,11 @@ hr {
 }
 
 .btn-large {
-    font-size: 65%;
-    padding: 9px 22px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 13.5px 26.5px;
+    line-height: 132.3%;
+
 }
 
 /* ----------------------------------------------- */
@@ -195,10 +213,14 @@ hr {
 
 .room-section-header {
     color: rgba(36, 30, 9, 0.6);
-    font-weight: 500;
-    font-size: 95%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
     cursor: pointer;
+    font-style: normal;
+
 }
+
 
 .active-header {
     color: #241E09;
@@ -214,16 +236,17 @@ hr {
 }
 
 .room-title {
-    font-size: 90%;
+    font-size: 24px;
     font-weight: 600;
     margin: 15px 0 12px;
 }
 
 .room-text{
-    font-size: 70%;
-    font-weight: 300;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 132.3%;
     margin-bottom: 7px;
-    line-height: 132%;
 }
 
 .details-container {
@@ -239,13 +262,16 @@ hr {
 }
 
 .amount-text {
-    font-size: 85%;
-    margin-top: 15px;
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 132.3%;
+    margin: 1rem 0;
+    
 }
 
 .buttons-container {
-    margin-top: 20px;
+    margin-top:2.1rem;
 }
 
 /* ----------------------------------------------- */
@@ -262,6 +288,9 @@ hr {
         max-width: 600px;
         margin: 0 auto;
         padding: 1.5rem;
+    }
+    .room-section-header{
+        font-size: 20px;
     }
 }
 
