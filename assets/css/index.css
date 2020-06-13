@@ -87,7 +87,9 @@ h2 {
 }
 /* Header section--------------------- */
 .page-header-container {
-	margin-bottom: 70px;
+
+	display: flex;
+    justify-content: flex-end;
 }
 
 .page-header-span {
@@ -97,7 +99,6 @@ h2 {
 }
 .page-header {
 	/* font-weight: 500; */
-	text-align: center;
 	padding: 0 150px 0 0;
 }
 
@@ -107,7 +108,7 @@ h2 {
 	background-color: #d4af37;
 	content: '';
 	width: 90px;
-	margin: 0.5em auto 0 auto;
+	margin: 0.5em 0 0 ;
 }
 
 .page-sub-header {
@@ -199,10 +200,11 @@ h2 {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	margin-top:4rem;
 }
 .enjoy-header {
 	width: 80%;
-	margin: 1em auto;
+	margin: 2em auto;
 }
 .enjoy-header h1 {
 	padding-top: 2em;
@@ -216,6 +218,7 @@ h2 {
 	width: 80%;
 	margin: 1em auto;
 	margin-bottom: 5em;
+	padding: 1rem;
 	/* border: 1px solid black; */
 }
 .enjoy-services h2 {
@@ -223,27 +226,36 @@ h2 {
 }
 .first-col {
 	/* border: 1px solid black; */
-	flex: 1;
+	width: 30%;
 	margin-right: 2em;
+	/* schnitter modif */
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .sec-col {
 	/* border: 1px solid black; */
-	flex: 1;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	width: 30%;
 	margin-right: 2em;
 }
 .third-col {
 	/* border: 1px solid black; */
-	flex: 2;
+	
+	width: 40%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	background-color: black;
 }
 
 .upper,
 .lower {
 	padding-left: 2em;
-	margin-bottom: 2em;
+	/* margin-bottom: 2em; */
 	position: relative;
 }
 .enjoy__clock-icon,
@@ -552,14 +564,17 @@ h2 {
 	.first-col,
 	.sec-col {
 		margin-right: unset;
+		width: 100%;
 	}
 
 	.upper,
 	.lower {
 		padding-left: unset;
+		margin:.7rem auto;
 	}
 
 	.third-col {
+		width: 100%;
 		order: -1;
 		margin-bottom: 1rem;
 	}
